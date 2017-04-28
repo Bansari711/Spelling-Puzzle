@@ -1,0 +1,171 @@
+/*
+Student Info: Name=Bansari, ID=19473
+Subject: CS557A_HW3_Spring_2017
+Author: Bansari
+Filename: CommonCSS.css
+Date and Time: Mar 7, 2017 10:31:05 AM
+Project Name: BansariPatel_19473_CS557A_HW3
+*/
+/* 
+    Created on : Mar 7, 2017, 10:31:05 AM
+    Author     : Bansari
+*/
+@media screen and (min-width:481px) {
+    body{
+        width: 99%;
+        height: 800px;
+        background-image: url('../Images/bodybackground.png');
+    }
+
+    aside{
+        width: 15%;
+        height: 75%;
+        float: left;
+    }
+
+    [title=lbl_separatorLine_Nav]{
+        display: inline;
+    }
+
+    nav{
+        height: 5%;
+        line-height: 5px;
+    }
+
+    nav ul li{
+        display: inline;
+    }
+
+    article{
+        width: 85%;
+        height: 75%;
+        float: right;
+    }
+
+    nav label{
+        color: white;
+        height: 100%;
+        font-size: x-large;
+        margin: 0 1% 0 1%;
+    }
+
+    #div_HeaderImage{
+        width: 40%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width:709px) {
+    body{
+        width: 96%;
+        height: 800px;
+        background-image: url('../Images/bodybackground.png');
+    }
+
+    aside{
+        width: 100%;
+        height: 75%;
+    }
+
+    [title=lbl_separatorLine_Nav]{
+        display: none;
+    }
+
+    nav{
+        height: 25%;
+        line-height: 25px;
+    }
+
+    nav ul li{
+        display: block;
+    }
+
+    article{
+        width: 100%;
+        height: 75%;
+    }
+
+    #div_HeaderImage{
+        width: 100%;
+        height: 100%;
+    }
+
+    nav label{
+        color: white;
+        height: 100%;
+        font-size: x-large;
+    }
+}
+
+
+
+header{
+    width: 100%;
+    height: 10%;
+}
+
+nav{
+    width: 100%;
+    background-color: #00bedd;
+    text-align: center;
+}
+
+nav ul{
+    list-style: none;
+}
+
+footer{
+    width: 100%;
+    height: 10%;
+    background-color: #00bedd;
+    float: left;
+    max-height: 200px;
+}
+
+header img{
+    width:100%;
+    height: 100%;
+}
+
+nav div{
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    margin-left: -45%;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+aside img{
+    width: 100%;
+    height: 100%;
+}
+
+aside div{
+    width:100%;
+    height: 100%;
+}
+
+footer label{
+    color: white;
+    font-size: xx-large;
+    position: absolute;
+    left: 15%;
+    margin-top: 1.2%;
+    
+}
+
+.buttonDesign{
+    background-image: repeating-linear-gradient(165deg, #c5191f, #c5191f 10px, #fd371a 10px, #fd371a 20px);
+    border: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 10px;
+    font-weight: 900;
+}
+
+.buttonDesign:hover{
+    background-image: repeating-linear-gradient(165deg, #fd371a, #fd371a 10px, #c5191f 10px, #c5191f 20px);
+}

@@ -1,0 +1,12 @@
+{
+    "name": "BansariPatel_19473_CS557A_HW1",
+    "version": "1.0.0",
+    "main": "path/to/main.css",
+    "ignore": [
+        ".jshintrc", "**/*.txt"
+    ],
+    "dependencies": {
+    },
+    "devDependencies": {
+    }
+}

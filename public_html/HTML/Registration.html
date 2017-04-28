@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<!--
+Student Info: Name=Bansari, ID=19473
+Subject: CS557A_HW3_Spring_2017
+Author: Bansari
+Filename: Registration.html
+Date and Time: Feb 21, 2017 11:33:44 AM
+Project Name: BansariPatel_19473_CS557A_HW3
+-->
+<html>
+    <head>
+        <title>Registration</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../JS/RegistrationJS.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="../CSS/CommonCSS.css"/>
+        <link rel="stylesheet" href="../CSS/RegistrationCSS.css"/>
+        <script type="text/javascript" src="../JS/CommonJS.js"></script>
+    </head>
+    <body>
+        <header>
+            <div id="div_HeaderImage">
+                <img src="../Images/Wordpuzzle-Logo-Resized.png" alt=""/>
+            </div>
+        </header>
+        <nav>
+            <div>
+                <ul>
+                    <li>
+                        <a href="Home.html">
+                            <label>
+                                Home
+                            </label>
+                        </a>
+                        <label title="lbl_separatorLine_Nav">|</label>
+                    </li>
+                    <li>
+                        <a href="Registration.html">
+                            <label>
+                                Register
+                            </label>
+                        </a>
+                        <label title="lbl_separatorLine_Nav">|</label>
+                    </li>
+                    <li>
+                        <a href="Game.html">
+                            <label>
+                                Games
+                            </label>
+                        </a>
+                        <label title="lbl_separatorLine_Nav">|</label>
+                    </li>
+                    <li>
+                        <a href="Logs.html">
+                            <label>
+                                Logs
+                            </label>
+                        </a>
+                        <label title="lbl_separatorLine_Nav">|</label>
+                    </li>
+                    <li>
+                        <a href="Login.html">
+                            <label>
+                                Login
+                            </label>
+                        </a>
+                        <label title="lbl_separatorLine_Nav">|</label>
+                    </li>
+                    <li>
+                        <a href="Login.html" onclick="logoutLink_Onclick()">
+                            <label>
+                                Logout
+                            </label>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <article>
+            <div id="div_mainRegistration_Register">
+                <div id="div_registrationHeader_Register">
+                    <div>
+                        <span></span>
+                        <span class="Header-navClose" aria-label="Close"></span>
+                    </div>
+                    <div class="Header-logo">
+                        <div class="Header-logoWrap">
+                            <div class="Header-logoBevel"></div>
+                            <div class="Header-logoBorder"></div>
+                            <img class="Header-logoImageCatchError" src="../Images/RegisterPageImage_Monkey.png">
+                            <div class="Header-logoImage" style="background-image: url(../Images/RegisterPageImage_Monkey.png);"></div>
+                        </div>
+                    </div>
+                    <h2>Registration</h2>
+                </div>
+                <div id="div_registrationDetails_Register">
+                    <form>
+                        <div class="div_detailsTitle_Register">
+                            <label id="lbl_UserName_Register">User Name: </label>
+                        </div>
+                        <div class="div_details_Register">
+                            <input type="text"  id="txt_UserName_Register" onchange="txt_UserName_register_onChange(this)" autocomplete="off"/>
+                            <label id="lbl_UserNameAvailability_Msg_Register"></label>
+                        </div>
+                        <br>
+                        <div class="div_detailsTitle_Register">
+                            <label id="lbl_FirstName_Register">First Name: </label>
+                        </div>
+                        <div class="div_details_Register">
+                            <input type="text" id="txt_FirstName_Register"/>
+                        </div>
+                        <br>
+                        <div class="div_detailsTitle_Register">
+                            <label id="lbl_LastName_Register">Last Name: </label>
+                        </div>
+                        <div class="div_details_Register">
+                            <input type="text" id="txt_LastName_Register"/>
+                        </div>
+                        <br>
+                        <div class="div_detailsTitle_Register">
+                            <label id="lbl_Password_Register">Password: </label>
+                        </div>
+                        <div class="div_details_Register">
+                            <input type="text" id="txt_Password_Register"/>
+                        </div>
+                        <br>
+                        <div class="div_detailsTitle_Register">
+                            <label id="lbl_RepeatPassword_Register">Repeat Password: </label>
+                        </div>
+                        <div class="div_details_Register">
+                            <input type="text" id="txt_RepeatPassword_Register"/>
+                        </div>
+                        <br>
+                        <div class="div_detailsTitle_Register">
+                            <label id="lbl_EmailAddress_Register">Email Address: </label>
+                        </div>
+                        <div class="div_details_Register">
+                            <input type="text" id="txt_EmailAddress_Register"/>
+                        </div>
+                        <br>
+                        <div class="div_detailsTitle_Register">
+                            <label id="lbl_Gender_Register">Gender: </label>
+                        </div>
+                        <div class="div_details_Register">
+                            <input id="radbtn_Male_Register" name="radbtnName_Gender_Register" type="radio" value="Male">Male
+                            <input id="radbtn_Female_Register" name="radbtnName_Gender_Register" type="radio" value="Female">Female
+                        </div>
+                        <div id="div_submitBtn_Register">
+                            <button id="btn_Submit_Register" class="buttonDesign buttonRegister" onclick="btn_Submit_Register_Onclick()">Sign Up</button>
+                            <button id="btn_Cancel_Register" class="buttonDesign buttonRegister" onclick="btn_Cancel_Register_Onclick()">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </article>
+        <aside>
+            <div id="div_aside">
+
+            </div>
+        </aside>
+        <footer>
+            <label>
+                Copyright © 2017 ABCya.com, L.L.C.  •  Spelling Bees | Spelling Practice  •  All Rights Reserved
+            </label>
+        </footer>
+    </body>
+</html>
+
+
+<!--<textarea id="txt_UserName_Register" onchange="txt_UserName_register_onChange(this)" rows="1"></textarea>
+<label id="lbl_UserNameAvailability_Msg_Register"></label> <br>
+<label id="lbl_FirstName_Register">First Name: </label>
+<textarea id="txt_FirstName_Register" rows="1"></textarea><br>
+<label id="lbl_LastName_Register">Last Name: </label>
+<textarea id="txt_LastName_Register"></textarea><br>
+<label id="lbl_Password_Register">Password: </label>
+<textarea id="txt_Password_Register"></textarea><br>
+<label id="lbl_RepeatPassword_Register">Repeat Password: </label>
+<textarea id="txt_RepeatPassword_Register"></textarea><br>
+<label id="lbl_EmailAddress_Register">Email Address: </label>
+<textarea id="txt_EmailAddress_Register"></textarea><br>
+<label id="lbl_Gender_Register">Gender: </label>-->

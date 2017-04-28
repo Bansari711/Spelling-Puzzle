@@ -1,0 +1,155 @@
+/*
+Student Info: Name=Bansari, ID=19473
+Subject: CS557A_HW3_Spring_2017
+Author: Bansari
+Filename: RegistrationCSS.css
+Date and Time: Mar 8, 2017 10:26:16 AM
+Project Name: BansariPatel_19473_CS557A_HW3
+*/
+/* 
+    Created on : Mar 8, 2017, 10:26:16 AM
+    Author     : Bansari
+*/
+
+@media screen and (min-width:590px) {
+    #div_mainRegistration_Register{
+
+        width: 30%;
+        height: 75%;
+        position: absolute;
+        left: 40%;
+        top: 20%;
+        
+    }
+}
+
+@media screen and (max-width:590px) {
+
+}
+
+
+
+#div_registrationHeader_Register{
+    background-color: #598700;
+    width: 100%;
+    height: 20%;
+    position: relative;
+    top:5%;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    text-align: center;
+    font-family: monospace;
+    font-size: 150%;
+}
+
+#div_registrationHeader_Register h2{
+    color:white;
+}
+
+#div_registrationDetails_Register{
+    background-color: #89ce11;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    height: 80%;
+    color: white;
+    font-size: 20px;
+
+}
+
+#div_registrationDetails_Register form{
+    position: relative;
+    top: 10%;
+    left: 15%;
+    height: 100%;
+}
+
+#div_registrationDetails_Register textarea{
+    height: 20px;
+    width: 100px;
+    resize: none;
+    overflow: hidden;
+    line-height: 1;
+}
+
+.Header-logoBorder{
+    border: 3px solid #fff;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.18), 0 2px 2px 0 rgba(0,0,0,.08);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Header-logoImageCatchError {
+    display: none;
+}
+
+.Header-logoImage {
+    width: 64px;
+    height: 64px;
+    margin: 3px;
+    border-radius: 100%;
+    background: #fff;
+    background-position: 50% 50%;
+    background-size: cover;
+    display: inline-block;
+}
+
+.Header-logoBevel {
+    border: 1px solid rgba(0,0,0,.2);
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+    box-shadow: inset 0 1px 0 0 hsla(0,0%,100%,.1);
+    position: absolute;
+    top: 3px;
+    left: 3px;
+}
+
+.Header-logoWrap {
+    position: absolute;
+    top: -38px;
+    right: 0;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+}
+
+.Header-logo {
+    position: relative;
+    margin-bottom: 6px;
+    height: 35px;
+}
+
+*, :after, :before {
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-font-smoothing: antialiased;
+}
+
+.buttonRegister{
+    width: 100px;
+    height: 30px;
+}
+
+.div_details_Register{
+    display: inline;
+    position: absolute;
+    left: 30%;
+    height: 10%;
+}
+
+.div_detailsTitle_Register{
+    display: inline;
+    height: 10%;
+}
+
+#div_submitBtn_Register{
+    
+}

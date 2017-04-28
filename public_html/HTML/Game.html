@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!--
+Student Info: Name=Bansari, ID=19473
+Subject: CS557A_HW3_Spring_2017
+Author: Bansari
+Filename: Game.html
+Date and Time: Feb 21, 2017 11:34:25 AM
+Project Name: BansariPatel_19473_CS557A_HW3
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../JS/GameJS.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="../CSS/CommonCSS.css"/>
+        <link rel="stylesheet" href="../CSS/GameCSS.css"/>
+    </head>
+    <body>
+        <header>
+            <div id="div_HeaderImage">
+                <img src="../Images/Wordpuzzle-Logo-Resized.png" alt=""/>
+            </div>
+        </header>
+        <nav>
+            <div>
+                <ul>
+                    <li>
+                        <a href="Home.html">
+                            <label>
+                                Home
+                            </label>
+                        </a>
+                        <label title="lbl_separatorLine_Nav">|</label>
+                    </li>
+                    <li>
+                        <a href="Registration.html">
+                            <label>
+                                Register
+                            </label>
+                        </a>
+                        <label title="lbl_separatorLine_Nav">|</label>
+                    </li>
+                    <li>
+                        <a href="Game.html">
+                            <label>
+                                Games
+                            </label>
+                        </a>
+                        <label title="lbl_separatorLine_Nav">|</label>
+                    </li>
+                    <li>
+                        <a href="Logs.html">
+                            <label>
+                                Logs
+                            </label>
+                        </a>
+                        <label title="lbl_separatorLine_Nav">|</label>
+                    </li>
+                    <li>
+                        <a href="Login.html">
+                            <label>
+                                Login
+                            </label>
+                        </a>
+                        <label title="lbl_separatorLine_Nav">|</label>
+                    </li>
+                    <li>
+                        <a href="Login.html" onclick="logoutLink_Onclick()">
+                            <label>
+                                Logout
+                            </label>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <article>
+            <div>
+                <div id="div_puzzle_gamePage">
+                    <div id="div_Question_gamePage">
+
+                    </div>
+                    <div id="div_Answer_gamePage">
+
+                    </div>
+                </div>
+                <div id="div_gameButtons_gamePage">
+                    <button id="btn_NewGame_gamePage" onclick="btn_NewGame_gamePage_Onclick()">New Game</button>
+                    <button id="btn_QuitGame_gamePage" onclick="btn_QuitGame_gamePage_Onclick()">Quit Game</button>
+                </div>
+                <div id="div_timer_gamePage">
+                    <label id="lbl_Timer"></label>
+                </div>
+            </div>
+        </article>
+        <aside>
+            <div id="div_aside">
+
+            </div>
+        </aside>
+        <footer>
+            <label>
+                Copyright © 2017 ABCya.com, L.L.C.  •  Spelling Bees | Spelling Practice  •  All Rights Reserved
+            </label>
+        </footer>
+    </body>
+</html>
